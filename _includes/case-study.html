@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="case-study">
+  <header>
+    <h1>{{title}}</h1>
+    <!-- <p>{{tagline}}</p> -->
+  </header>
+
+  <main>
+    {{ content }}
+
+    <section id="bottom">
+      <div class="inner-section">
+        <a class="back-link" href="{{site.rootPath}}">Back to homepage</a>
+      </div>
+    </section>
+  </main>
+
+  {% render "footer.html" %}
+</body>
+
+</html>

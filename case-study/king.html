@@ -1,6 +1,6 @@
 ---
 layout: 'case-study.html'
-title: "Revamping the test automation of a legacy mobile game title"
+title: "Revamping the test automation of a legacy mobile app"
 tagline: "Case study of supporting the test automation team at King (makers of Candy Crush)"
 ---
 
@@ -9,8 +9,13 @@ tagline: "Case study of supporting the test automation team at King (makers of C
         <a class="back-link" href="{{site.rootPath}}">Back to homepage</a>
         <h2>Overview</h2>
         <p>
-            I was recruited by King, makers of <a href="https://www.king.com/game/candycrush">Candy Crush</a>, to
-            support their test automation team working on a legacy title more than 10 years old.<br>
+            King, the creator of the <a href="https://www.king.com/game/candycrush" target="_blank">Candy Crush</a>
+            franchise, is one of mobile gaming’s most successful publishers, with its titles generating over $20 billion
+            in lifetime revenue and hundreds of millions of downloads worldwide.
+        </p>
+        <p>
+            They recruited me to support their test automation team of one of their flagship title that is more than 10
+            years old.<br>
             I revamped the notification system to alert only the relevant engineers of test failures, and made the tests
             faster and less flaky.
         </p>
@@ -32,6 +37,7 @@ tagline: "Case study of supporting the test automation team at King (makers of C
             built from scratch.<br>
             King is no exception and they built their own proprietary solution following a client/server architecture.
         </p>
+        <h3>Wrong feedback from notifications</h3>
         <p>
             The first challenge was the amount of noise the engineering team was presented with. The pipeline was
             running
@@ -39,9 +45,11 @@ tagline: "Case study of supporting the test automation team at King (makers of C
             without
             a clear owner.
         </p>
+        <h3>Flaky test running for too long</h3>
         <p>
             The second challenge was to optimize the tests themselves, both in terms of flakiness and speed.
         </p>
+        <p>The test suite was regularly raising obscure errors without clear causes after long execution times.</p>
     </div>
 </section>
 
@@ -130,13 +138,3 @@ tagline: "Case study of supporting the test automation team at King (makers of C
         </p>
     </div>
 </section>
-
-<!-- <h2>Technical Highlights</h2>
-<section class="highlights">
-    <ul>
-        <li>Parallelized execution reducing overall runtime by 60%.</li>
-        <li>Custom reporting pipeline producing HTML & Slack notifications.</li>
-        <li>Advanced selector strategy ensuring stability across UI changes.</li>
-        <li>Mocking network requests for isolated and deterministic tests.</li>
-    </ul>
-</section> -->

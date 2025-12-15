@@ -112,15 +112,6 @@ main>section {
     }
 }
 
-.project-link {
-    margin-top: auto;
-    text-align: right;
-}
-
-.project-link::after {
-    content: " →";
-}
-
 
 .skill-list {
     display: grid;

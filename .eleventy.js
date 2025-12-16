@@ -1,9 +1,10 @@
 export default function (eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("css");
-    eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addPassthroughCopy("src/assets");
     return {
         dir: {
-            output: "docs"
+            input: "src",
+            layouts: "_layouts",
+            output: "docs",
         },
         clean: true
     };

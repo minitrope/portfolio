@@ -1,3 +1,4 @@
 export default {
-    rootPath: "/"
+    rootPath: "/",
+    baseUrl: "https://romaingauthier.dev"
 };

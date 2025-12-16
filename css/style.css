@@ -34,11 +34,11 @@ h5 {
 
 a {
     color: inherit;
-  }
-  
-  a:visited {
+}
+
+a:visited {
     color: inherit;
-  }
+}
 
 footer {
     text-align: center;
@@ -186,8 +186,7 @@ main>section {
 
     }
 
-    & i {
-    }
+    & i {}
 }
 
 .landing .project {

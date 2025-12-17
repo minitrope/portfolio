@@ -11,13 +11,12 @@
 <body class="case-study">
   <header>
     <h1>{{title}}</h1>
-    <!-- <p>{{tagline}}</p> -->
   </header>
 
   <main>
     {{ content }}
 
-    {% render "contact-form.html" %}
+    {% render "components/contact-form.html" %}
 
     <section id="bottom">
       <div class="inner-section">
@@ -26,7 +25,7 @@
     </section>
   </main>
 
-  {% render "footer.html" %}
+  {% render "components/footer.html" %}
 </body>
 
 </html>

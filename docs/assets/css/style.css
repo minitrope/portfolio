@@ -207,7 +207,7 @@ main>section {
     & i {}
 }
 
-.landing .project {
+.project {
     display: flex;
     flex-direction: row;
 

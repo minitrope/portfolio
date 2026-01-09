@@ -1,0 +1,57 @@
+---
+pagination:
+    data: skills
+    size: 1
+    alias: skill
+    addAllPagesToCollections: true
+permalink: '/skills/{{skill | downcase | replace: " ", "-" }}.html'
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ skill }} highlights - Senior QA Automation Engineer - Romain Gauthier</title>
+
+    {% include "seo.html" %}
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body class="skill-page">
+<header>
+    <h1>{{skill}} highlights</h1>
+</header>
+
+<main>
+    <section id="projects">
+        <div class="inner-section">
+            <a class="back-link" href="{{site.rootPath}}#my-skills">Back to homepage</a>
+
+        {% for project in projects %}
+            {% if project.skills contains skill %}
+                <div class="card project">
+                    <div class="preview">
+                        <h3>{{project.title}}</h3>
+                        <p>{{ project.description }}</p>
+                        <a class="project-link" href="{{ project.link.href }}">{{project.link.text}}</a>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+    </section>
+
+    <section id="bottom">
+        <div class="inner-section">
+            <a class="back-link" href="{{site.rootPath}}#my-skills">Back to homepage</a>
+        </div>
+    </section>
+</main>
+
+{% render "components/footer.html" %}
+{% include "gtag.html" %}
+
+</body>
+</html>
